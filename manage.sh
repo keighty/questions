@@ -25,7 +25,7 @@ cd $root_dir
 
 case "$action" in
   deploy)
-    deploy_s3
+    deploy_s3 ${2}
     ;;
   create)
     create_bucket ${2}
