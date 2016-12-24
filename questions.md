@@ -36,3 +36,15 @@ How does senior management view this team?
 http://www.theeffectiveengineer.com/
 
 http://www.job-hunt.org/onlinejobsearchguide/article_job_interview_questions.shtml
+
+
+What single behaviour or attitude is most likely to upset your boss?
+When is your boss most pleased with direct reports? What do they say or do during the course of carrying out assignments or in meetings that earns his approval?
+What are your boss's demons? What work issue do you think keeps him up at night pacing the floor?
+What do you think your manager's career objectives are? What capstone position is he aiming for? What does he need to accomplish to achieve these objectives?
+What drives your manager? What non-career motivators push her? Is she after power, money, fame, security, knowledge, innovation, etc?
+What trait or attitude that you possess makes you think you are well-suited to work for this particular boss? What trait or attitudes makes you think you are ill-suited?
+If your boss were a famous movie star, political, or other celebrity, who would he be? What particular traits does he share in common with this well-known individual?
+
+## Sources
+Managing Your Manager: How to Get Ahead With Any Type of Boss, by Gonzague Dufour
