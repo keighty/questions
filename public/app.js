@@ -1,68 +1,36 @@
-const KEY_POINT = 'key-point'
-const ROCK_REASON = 'rock-reason'
+const lists = {
+  'key-points': getFromStorage('key-points'),
+  'rock-reasons': getFromStorage('rock-reasons'),
+  'develop': getFromStorage('develop')
+}
 
-const sections = [KEY_POINT, ROCK_REASON]
-const [
-  keyPointList,
-  rockReasonList
-] = sections
-      .map(section => document.querySelector(`.${section}`))
+Object.keys(lists).forEach(k => populateList(lists[k], k))
 
-// const keyPointList = document.querySelector(keyPointListSelector)
-// const rockReasonList = document.querySelector('rockReasonListSelector')
+const [keyPointForm, rockReasonForm, developForm] = Array.from(document.querySelectorAll('form'))
 
-const [
-  keyPointForm,
-  rockReasonForm
-] = sections
-      .map(section => document.querySelector(`.add-${section}`))
+function getFromStorage(key) {
+  return JSON.parse(localStorage.getItem(key)) || []
+}
 
-// const keyPointForm = document.querySelector('.add-key-point')
-// const rockReasonForm = document.querySelector('.add-rock-reason')
-
-const keyPointListSelector = `.${KEY_POINT}s`
-const rockReasonListSelector = `.${ROCK_REASON}s`
-
-const [
-  keyPoints,
-  rockReasons
-] = sections
-      .map(section => JSON.parse(localStorage.getItem(`${section}s`)))
-
-// const rockReasons = JSON.parse(localStorage.getItem('rock-reasons')) || []
-// const keyPoints = JSON.parse(localStorage.getItem('key-points')) || []
-
-populateList(rockReasons, rockReasonListSelector)
-populateList(keyPoints, keyPointListSelector)
-
-function addKeyPoint(e) {
-  e.preventDefault();
-  const text = this.querySelector('[name]').value
-  keyPoints.push(text)
-  populateList(keyPoints, keyPointListSelector)
-  localStorage.setItem('key-points', JSON.stringify(keyPoints))
+function addItem(e) {
+  e.preventDefault()
+  const text = (this.querySelector('[name]')).value
+  const list = lists[this.name]
+  list.push(text)
+  populateList(list, this.name)
+  localStorage.setItem(this.name, JSON.stringify(list))
   this.reset()
 }
 
 function populateList(itemList = [], itemListId) {
-  const list = document.querySelector(itemListId)
+  const list = document.querySelector('ul.' + itemListId)
   list.innerHTML = itemList.map((item, i) => {
     return `
-      <li id=${i}-key-point>${item}</li>
+    <li id=${i}-${itemListId}>${item}</li>
     `
   }).join('')
 }
 
-keyPointForm.addEventListener('submit', addKeyPoint)
-
-
-function addRockReason(e) {
-  e.preventDefault()
-  const text = this.querySelector('[name]').value
-  rockReasons.push(text)
-  populateList(rockReasons, rockReasonListSelector)
-  localStorage.setItem('rock-reasons', JSON.stringify(rockReasons))
-  this.reset()
-}
-
-rockReasonForm.addEventListener('submit', addRockReason)
+keyPointForm.addEventListener('submit', addItem)
+rockReasonForm.addEventListener('submit', addItem)
+developForm.addEventListener('submit', addItem)
