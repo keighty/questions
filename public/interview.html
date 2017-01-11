@@ -23,9 +23,10 @@
     </div>
 
     <div class='markup container'>
+      <h1>Interview prep grid</h1>
       <div class="row">
         <div class="seven columns">
-          <p>Double click a header to clear that section or click the button to clear the entire form.</p>
+          <p>Double click a section header to clear just that list or click the button to clear the entire form. Hover over a section for tips on what to add..</p>
         </div>
         <div class="five columns">
           <button id="clear-form">Clear form</button>
@@ -68,12 +69,12 @@
             <input type="text" name="ideas" placeholder='Add an idea...'>
           </form>
         </div>
-        <div class='four columns' title="What is the company/manager's approach to deadlines, PTO, work-life balance?">
-          <h4 class='philosophy'>Work philosophy</h4>
-          <ul class='philosophy'></ul>
+        <div class='four columns' title="Be specific about recent technical challenges you have faced.">
+          <h4 class='challenges'>Challenges</h4>
+          <ul class='challenges'></ul>
 
-          <form class='philosophy' name='philosophy' autocomplete="off">
-            <input type="text" name='philosophy' placeholder='Add philosophy...'>
+          <form class='challenges' name='challenges' autocomplete="off">
+            <input type="text" name='challenges' placeholder='Add a challenge...'>
           </form>
         </div>
         <div class='four columns' title="About the role, interviewer, company, future growth opportunities, benefits -- ask about parental leave, because it shows how much they value work-family balance AND how they treat women in the workplace">
@@ -89,19 +90,19 @@
 
       <div class='row'>
         <div class='four columns' title="If you don't have a 5-year plan, be candid about it. What is your 1- or 2-year plan for your career growth?">
-          <h4>Short term goals</h4>
+          <h4 class='goals'>Short term goals</h4>
           <ul class='goals'></ul>
 
           <form class='goals' name='goals' autocomplete="off">
             <input type="text" name="goals" placeholder='Add a goal...'>
           </form>
         </div>
-        <div class='four columns' title="Be specific about recent technical challenges you have faced.">
-          <h4 class='challenges'>Challenges</h4>
-          <ul class='challenges'></ul>
+        <div class='four columns' title="What is the company/manager's approach to deadlines, PTO, work-life balance?">
+          <h4 class='philosophy'>Work philosophy</h4>
+          <ul class='philosophy'></ul>
 
-          <form class='challenges' name='challenges' autocomplete="off">
-            <input type="text" name='challenges' placeholder='Add a challenge...'>
+          <form class='philosophy' name='philosophy' autocomplete="off">
+            <input type="text" name='philosophy' placeholder='Add philosophy...'>
           </form>
         </div>
         <div class='four columns' title="Name of the interviewer, company, date">
@@ -118,7 +119,7 @@
         Adapted from Jenny Blake's <a href="http://lifeaftercollege.org" target="blank">LifeAfterCollege.org</a>
       </footer>
     </div>
-    
+
     <script src='./app.js'></script>
   </body>
 </html>

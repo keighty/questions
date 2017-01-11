@@ -53,10 +53,12 @@ document.querySelectorAll('h4').forEach(heading => {
 function clearForm(e) {
   const listName = this.className
   if (listName) {
+    lists[listName] = []
     sendToStorage(listName)
     populateList(listName)
   } else {
     listNames.forEach(name => {
+      lists[name] = []
       sendToStorage(name)
       populateList(name)
     })
