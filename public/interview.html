@@ -10,6 +10,8 @@
     <script src='./vendor.js'></script>
     <link rel="stylesheet" href="./stylesheets/index.css" media="screen">
     <link rel="stylesheet" href="./stylesheets/interview.css" media="screen">
+    <link rel="stylesheet" href="./stylesheets/interview-print.css" media="print">
+
   </head>
 
   <body>
@@ -24,12 +26,16 @@
 
     <div class='markup container'>
       <h1>Interview prep grid</h1>
+      <p>
+        Use this grid to prepare for your next interview. Include questions you want to ask, key words you want to use, and notes for how to respond to the most common questions. The form will be saved in local storage, so make sure you print this page, or use the same computer if you want to refer back to your lists.
+      </p>
       <div class="row">
-        <div class="seven columns">
+        <div class="eight columns">
           <p>Double click a section header to clear just that list or click the button to clear the entire form. Hover over a section for tips on what to add..</p>
         </div>
-        <div class="five columns">
+        <div class="four columns">
           <button id="clear-form">Clear form</button>
+          <button id="print-form">Print form</button>
         </div>
       </div>
 
@@ -120,6 +126,6 @@
       </footer>
     </div>
 
-    <script src='./app.js'></script>
+    <script src='./javascripts/interview.js'></script>
   </body>
 </html>
