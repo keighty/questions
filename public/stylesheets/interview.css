@@ -1,0 +1,8 @@
+.no-break {
+  white-space: nowrap;
+}
+
+.remove {
+  font-size: 2em;
+  color: red;
+}

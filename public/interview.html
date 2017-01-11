@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Questions</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src='./vendor.js'></script>
+    <link rel="stylesheet" href="./stylesheets/index.css" media="screen">
+    <link rel="stylesheet" href="./stylesheets/interview.css" media="screen">
+  </head>
+
+  <body>
+    <!-- nav container -->
+    <div class='nav-container no-select fixed-top u-full-width'>
+      <ul class='inline-list hover-links nav-list'>
+        <li><a href="./index.html">Company</a></li>
+        <li><a href="./bosses.html">Bosses</a></li>
+        <li><a href="./interview.html">Interview prep</a></li>
+      </ul>
+    </div>
+
+    <div class='markup container'>
+      <div class='row'>
+        <div class='four columns'>
+          <h4>Key points</h4>
+          <ul class='key-points'></ul>
+          <form class='add-key-point' autocomplete="off">
+            <input type="text" name="key-point" placeholder='Add key point...'>
+          </form>
+        </div>
+        <div class='four columns'>
+          <h4>Reasons I rock</h4>
+          <ul class='rock-reasons'></ul>
+          <form class='add-rock-reason' autocomplete="off">
+            <input type="text" name="rock-reason" placeholder='Add reason...'>
+          </form>
+        </div>
+        <div class='four columns'>
+          <h4>What I want to develop</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src='./app.js'></script>
+  </body>
+</html>
