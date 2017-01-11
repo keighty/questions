@@ -20,7 +20,7 @@ function getFromStorage(key) {
   return JSON.parse(localStorage.getItem(key)) || []
 }
 
-function sendToStorage(key, list) {
+function sendToStorage(key, list = []) {
   localStorage.setItem(key, JSON.stringify(list))
 }
 
@@ -46,3 +46,21 @@ function populateList(itemListId, itemList = []) {
 }
 
 document.querySelectorAll('form').forEach(form => form.addEventListener('submit', addItem))
+document.querySelectorAll('h4').forEach(heading => {
+  heading.addEventListener('dblclick', clearForm)
+})
+
+function clearForm(e) {
+  const listName = this.className
+  if (listName) {
+    sendToStorage(listName)
+    populateList(listName)
+  } else {
+    listNames.forEach(name => {
+      sendToStorage(name)
+      populateList(name)
+    })
+  }
+}
+
+document.querySelector('button#clear-form').addEventListener('click', clearForm)
