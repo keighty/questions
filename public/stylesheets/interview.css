@@ -2,7 +2,7 @@
   white-space: nowrap;
 }
 
-.remove {
-  font-size: 2em;
-  color: red;
+.row {
+  border-top: 1px solid lightgrey;
+  padding-top: 20px;
 }

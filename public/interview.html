@@ -23,26 +23,36 @@
     </div>
 
     <div class='markup container'>
-      <button id="clear-form">Clear form</button>
+      <div class="row">
+        <div class="seven columns">
+          <p>Double click a header to clear that section or click the button to clear the entire form.</p>
+        </div>
+        <div class="five columns">
+          <button id="clear-form">Clear form</button>
+        </div>
+      </div>
 
       <div class='row'>
-        <div class='four columns'>
+        <div class='four columns' title="What do you want the interviewer to come away with? A sense of your technical skill? Personality? Use this section to focus your interview.">
           <h4 class='key-points'>Key points</h4>
           <ul class='key-points'></ul>
+
           <form class='key-points' name='key-points' autocomplete="off">
             <input type="text" name="key-points" placeholder='Add key point...'>
           </form>
         </div>
-        <div class='four columns'>
+        <div class='four columns' title="Recent examples of how I have gone above and beyond for my team.">
           <h4 class='rock-reasons'>Reasons I rock</h4>
           <ul class='rock-reasons'></ul>
+
           <form class='rock-reasons' name='rock-reasons' autocomplete="off">
             <input type="text" name='rock-reasons' placeholder='Add reason...'>
           </form>
         </div>
-        <div class='four columns'>
+        <div class='four columns' title="What direction do I want my career to head in? Use these directions to answer questions about weaknesses, or potential for growth.">
           <h4 class='develop'>How I want to develop</h4>
           <ul class='develop'></ul>
+
           <form class='develop' name='develop' autocomplete="off">
             <input type="text" name='develop' placeholder='Add plan...'>
           </form>
@@ -50,55 +60,65 @@
       </div>
 
       <div class='row'>
-        <div class='four columns'>
+        <div class='four columns' title="Can you suggest anything that would improve the team/workflow? Otherwise, what projects are you most excited about, personal and professional.">
           <h4 class='ideas'>Brilliant ideas</h4>
           <ul class='ideas'></ul>
+
           <form class='ideas' name='ideas' autocomplete="off">
             <input type="text" name="ideas" placeholder='Add an idea...'>
           </form>
         </div>
-        <div class='four columns'>
+        <div class='four columns' title="What is the company/manager's approach to deadlines, PTO, work-life balance?">
           <h4 class='philosophy'>Work philosophy</h4>
           <ul class='philosophy'></ul>
+
           <form class='philosophy' name='philosophy' autocomplete="off">
             <input type="text" name='philosophy' placeholder='Add philosophy...'>
           </form>
         </div>
-        <div class='four columns'>
+        <div class='four columns' title="About the role, interviewer, company, future growth opportunities, benefits -- ask about parental leave, because it shows how much they value work-family balance AND how they treat women in the workplace">
           <h4 class='questions'>Questions</h4>
           <ul class='questions'></ul>
+
           <form class='questions' name='questions' autocomplete="off">
             <input type="text" name='questions' placeholder='Add question...'>
           </form>
         </div>
       </div>
 
+
       <div class='row'>
-        <div class='four columns'>
+        <div class='four columns' title="If you don't have a 5-year plan, be candid about it. What is your 1- or 2-year plan for your career growth?">
           <h4>Short term goals</h4>
           <ul class='goals'></ul>
+
           <form class='goals' name='goals' autocomplete="off">
-            <input type="text" name="goals" placeholder='Add an idea...'>
+            <input type="text" name="goals" placeholder='Add a goal...'>
           </form>
         </div>
-        <div class='four columns'>
+        <div class='four columns' title="Be specific about recent technical challenges you have faced.">
           <h4 class='challenges'>Challenges</h4>
           <ul class='challenges'></ul>
+
           <form class='challenges' name='challenges' autocomplete="off">
-            <input type="text" name='challenges' placeholder='Add philosophy...'>
+            <input type="text" name='challenges' placeholder='Add a challenge...'>
           </form>
         </div>
-        <div class='four columns'>
+        <div class='four columns' title="Name of the interviewer, company, date">
           <h4 class='notes'>Notes</h4>
           <ul class='notes'></ul>
+
           <form class='notes' name='notes' autocomplete="off">
-            <input type="text" name='notes' placeholder='Add question...'>
+            <input type="text" name='notes' placeholder='Add note...'>
           </form>
         </div>
       </div>
 
-
+      <footer class='row'>
+        Adapted from Jenny Blake's <a href="http://lifeaftercollege.org" target="blank">LifeAfterCollege.org</a>
+      </footer>
     </div>
+    
     <script src='./app.js'></script>
   </body>
 </html>
